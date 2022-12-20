@@ -7,37 +7,90 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script language="javascript" type="text/javascript">
+    var a = 0;
+    var b = 0;
+    var c = 0;
+    var d = 0;
+    var count_value = 0;
+
         function OnButtonClick1() {
           document.getElementById("led1").src = "https://2.bp.blogspot.com/-eQeSANn3d7w/XOdonDysX7I/AAAAAAABS9M/JO5J4PGA-3sNNUTozs-x12CsLEpHb3wIACLcBGAs/s280/led_red.png;"
+          ;
+          a = 8
+          ;
+          count_value = a+b+c+d
+          ;
+          document.getElementById("disp_count").innerHTML =count_value
           ;
         }
         function OffButtonclick1() {
           document.getElementById("led1").src = "https://4.bp.blogspot.com/-DFa12nEL1Z4/XOdongf_JWI/AAAAAAABS9U/wMYJgbCUursCALGQgHCHz50Kl_KQyI6UwCLcBGAs/s280/led_white.png;"
+          ;
+          a = 0
+          ;
+          count_value = a+b+c+d
+          ;
+          document.getElementById("disp_count").innerHTML =count_value
           ;
         
         }
         function OnButtonClick2() {
           document.getElementById("led2").src = "https://2.bp.blogspot.com/-eQeSANn3d7w/XOdonDysX7I/AAAAAAABS9M/JO5J4PGA-3sNNUTozs-x12CsLEpHb3wIACLcBGAs/s280/led_red.png;"
           ;
+          b = 4
+          ;
+          count_value = a+b+c+d
+          ;
+          document.getElementById("disp_count").innerHTML =count_value
+          ;
         }
         function OffButtonclick2() {
           document.getElementById("led2").src = "https://4.bp.blogspot.com/-DFa12nEL1Z4/XOdongf_JWI/AAAAAAABS9U/wMYJgbCUursCALGQgHCHz50Kl_KQyI6UwCLcBGAs/s280/led_white.png;"
           ;
+          b = 0
+          ;
+          count_value = a+b+c+d
+          ;
+          document.getElementById("disp_count").innerHTML =count_value;
         }
         function OnButtonClick3() {
           document.getElementById("led3").src = "https://2.bp.blogspot.com/-eQeSANn3d7w/XOdonDysX7I/AAAAAAABS9M/JO5J4PGA-3sNNUTozs-x12CsLEpHb3wIACLcBGAs/s280/led_red.png;"
+          ;
+          c = 2
+          ;
+          count_value = a+b+c+d
+          ;
+          document.getElementById("disp_count").innerHTML =count_value
           ;
         }
         function OffButtonclick3() {
           document.getElementById("led3").src = "https://4.bp.blogspot.com/-DFa12nEL1Z4/XOdongf_JWI/AAAAAAABS9U/wMYJgbCUursCALGQgHCHz50Kl_KQyI6UwCLcBGAs/s280/led_white.png;"
           ;
+          c = 0
+          ;
+          count_value = a+b+c+d
+          ;
+          document.getElementById("disp_count").innerHTML =count_value
+          ;
         }
         function OnButtonClick4() {
           document.getElementById("led4").src = "https://2.bp.blogspot.com/-eQeSANn3d7w/XOdonDysX7I/AAAAAAABS9M/JO5J4PGA-3sNNUTozs-x12CsLEpHb3wIACLcBGAs/s280/led_red.png;"
           ;
+          d = 1
+          ;
+          count_value = a+b+c+d
+          ;
+          document.getElementById("disp_count").innerHTML =count_value
+          ;
         }
         function OffButtonclick4() {
           document.getElementById("led4").src = "https://4.bp.blogspot.com/-DFa12nEL1Z4/XOdongf_JWI/AAAAAAABS9U/wMYJgbCUursCALGQgHCHz50Kl_KQyI6UwCLcBGAs/s280/led_white.png;"
+          ;
+          d = 0
+          ;
+          count_value = a+b+c+d
+          ;
+          document.getElementById("disp_count").innerHTML =count_value
           ;
         }
   </script>
@@ -89,6 +142,9 @@
      <br><button
           type="button"
           onclick="OffButtonclick4();">off</button>
+  </div>
+  <div id="disp_count" style="display: inline-block; font-size: 150px">
+    0
   </div>
  </div>
 
